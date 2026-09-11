@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0c12"/>
+      <stop offset="1" stop-color="#05060a"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="0.2" cy="0.2" r="0.5">
+      <stop offset="0" stop-color="#2f6bff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#2f6bff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0.85" cy="0.75" r="0.5">
+      <stop offset="0" stop-color="#5db9ff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#5db9ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1">
+    <path d="M0 157.5H1200M0 315H1200M0 472.5H1200M300 0V630M600 0V630M900 0V630"/>
+  </g>
+  <circle cx="80" cy="80" r="10" fill="#2f6bff"/>
+  <text x="120" y="90" fill="#9a9fb0" font-family="monospace" font-size="24" letter-spacing="6">STRATEGIES BY MADDY</text>
+  <text x="80" y="320" fill="#e9eaf0" font-family="Sora, Arial, sans-serif" font-weight="800"
+        font-size="98" letter-spacing="-4">Paid ads &amp; content</text>
+  <text x="80" y="428" fill="#2f6bff" font-family="Sora, Arial, sans-serif" font-weight="800"
+        font-size="98" letter-spacing="-4">that perform.</text>
+  <text x="80" y="520" fill="#626676" font-family="monospace" font-size="24" letter-spacing="2">
+    Muzamil Masood · Digital Marketer &amp; Social Media Manager
+  </text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0f16"/>
+      <stop offset="1" stop-color="#05060a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.38" r="0.5">
+      <stop offset="0" stop-color="#2f6bff" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#2f6bff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="800" fill="url(#bg)"/>
+  <rect width="640" height="800" fill="url(#glow)"/>
+  <g fill="none" stroke="#5db9ff" stroke-opacity="0.14" stroke-width="1">
+    <path d="M0 200H640M0 400H640M0 600H640M160 0V800M320 0V800M480 0V800"/>
+  </g>
+  <circle cx="320" cy="300" r="120" fill="none" stroke="#2f6bff" stroke-width="2" stroke-opacity="0.6"/>
+  <circle cx="320" cy="300" r="70" fill="#12141d"/>
+  <path d="M320 380c-90 0-150 60-160 140h320c-10-80-70-140-160-140Z" fill="#12141d"/>
+  <text x="320" y="560" text-anchor="middle" fill="#626676"
+        font-family="monospace" font-size="24" letter-spacing="4">MUZAMIL MASOOD</text>
+  <text x="320" y="600" text-anchor="middle" fill="#3a3f4d"
+        font-family="monospace" font-size="16" letter-spacing="2">add public/portrait.jpg</text>
+</svg>
