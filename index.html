@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#05060a" />
+
+    <title>Muzamil Masood — Digital Marketer & Social Media Manager</title>
+    <meta
+      name="description"
+      content="Muzamil Masood (Strategies by Maddy) — digital marketer and social media manager. Social media management, content creation, Meta & Google Ads, email marketing and AI-powered marketing for brands that want to grow."
+    />
+    <meta name="author" content="Muzamil Masood" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muzamil Masood — Digital Marketer & Social Media Manager" />
+    <meta
+      property="og:description"
+      content="Strategies by Maddy — social media management, content creation and paid ads that perform. Selected work, capabilities and results."
+    />
+    <meta property="og:image" content="/social-card.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ============ GRAIN + VIGNETTE OVERLAYS ============ -->
+    <div class="fx-grain" aria-hidden="true"></div>
+    <div class="fx-scanlines" aria-hidden="true"></div>
+    <div class="fx-vignette" aria-hidden="true"></div>
+
+    <!-- ============ PRELOADER ============ -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="preloader__inner">
+        <div class="preloader__row">
+          <span class="preloader__label" data-preload-label>Initialising</span>
+          <span class="preloader__count"><span id="preloadCount">0</span><i>%</i></span>
+        </div>
+        <div class="preloader__bar"><span id="preloadBar"></span></div>
+        <div class="preloader__name" data-preload-name>
+          <span>M</span><span>A</span><span>D</span><span>D</span><span>Y</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ CUSTOM CURSOR ============ -->
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <div class="cursor__dot" id="cursorDot"></div>
+      <div class="cursor__ring" id="cursorRing"><span id="cursorText"></span></div>
+    </div>
+
+    <!-- ============ SCROLL PROGRESS ============ -->
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+    <!-- ============ WEBGL CANVAS ============ -->
+    <canvas id="webgl" class="webgl" aria-hidden="true"></canvas>
+    <div class="webgl-fallback" aria-hidden="true"></div>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+      <a href="#top" class="nav__brand" data-cursor="Home" aria-label="Maddy — home">
+        <span class="nav__brand-mark"></span>
+        <span class="nav__brand-text">Maddy<i>.</i></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#work" data-nav-link>Work</a>
+        <a href="#capabilities" data-nav-link>Capabilities</a>
+        <a href="#about" data-nav-link>About</a>
+        <a href="#process" data-nav-link>Process</a>
+      </nav>
+      <a href="#contact" class="nav__cta" data-cursor="Say hi" data-magnetic>
+        <span>Start a project</span>
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+          <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <!-- ============ MOBILE MENU ============ -->
+    <div class="menu" id="menu" aria-hidden="true">
+      <nav class="menu__inner">
+        <a href="#work" data-menu-link><span>01</span> Work</a>
+        <a href="#capabilities" data-menu-link><span>02</span> Capabilities</a>
+        <a href="#about" data-menu-link><span>03</span> About</a>
+        <a href="#process" data-menu-link><span>04</span> Process</a>
+        <a href="#contact" data-menu-link><span>05</span> Contact</a>
+      </nav>
+    </div>
+
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="hero">
+        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-reveal-eyebrow>
+            <span class="dot"></span> <span data-content="profile.available"></span>
+          </p>
+
+          <h1 class="hero__title">
+            <span class="line"><span data-split data-content="profile.headlineTop">Performance</span></span>
+            <span class="line line--accent"><span data-split data-content="profile.headlineMid">marketing</span></span>
+            <span class="line"><span data-split data-content="profile.headlineBot">that compounds.</span></span>
+          </h1>
+
+          <div class="hero__meta">
+            <p class="hero__lede" data-content="profile.lede"></p>
+            <div class="hero__role">
+              <span class="hero__role-label">Currently</span>
+              <span class="hero__role-value" id="roleScramble" data-content="profile.role"></span>
+            </div>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#work" class="btn btn--primary" data-cursor="Explore" data-magnetic>
+              <span>See selected work</span>
+            </a>
+            <a href="#contact" class="btn btn--ghost" data-cursor="Email" data-magnetic>
+              <span>Book a strategy call</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <div class="hero__scroll-line"><i></i></div>
+        </div>
+
+        <div class="hero__side" aria-hidden="true">
+          <span data-content="profile.coordinates">—</span>
+          <span data-content="profile.localLabel">local</span> <span id="localClock">--:--</span>
+        </div>
+      </section>
+
+      <!-- ============ MARQUEE STRIP ============ -->
+      <section class="strip" aria-label="Focus areas">
+        <div class="strip__track" data-marquee data-marquee-speed="1">
+          <div class="strip__group" data-marquee-content></div>
+          <div class="strip__group" data-marquee-content aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- ============ IMPACT / STATS ============ -->
+      <section class="impact" id="impact">
+        <div class="section-head">
+          <span class="section-head__index">01</span>
+          <h2 class="section-head__title" data-lines>Numbers that moved</h2>
+          <p class="section-head__sub" data-reveal>
+            A snapshot across accounts, brands and campaigns. Full context lives in the projects below.
+          </p>
+        </div>
+        <div class="impact__grid" id="impactGrid"></div>
+      </section>
+
+      <!-- ============ SELECTED WORK ============ -->
+      <section class="work" id="work">
+        <div class="section-head">
+          <span class="section-head__index">02</span>
+          <h2 class="section-head__title" data-lines>Selected work</h2>
+          <p class="section-head__sub" data-reveal>
+            Brands across food, beauty, retail and e-commerce — social media, content and paid campaigns.
+          </p>
+        </div>
+        <div class="work__list" id="workList"></div>
+      </section>
+
+      <!-- ============ CAPABILITIES ============ -->
+      <section class="caps" id="capabilities">
+        <div class="section-head">
+          <span class="section-head__index">03</span>
+          <h2 class="section-head__title" data-lines>Capabilities</h2>
+          <p class="section-head__sub" data-reveal>
+            Social media, content and paid ads — plus the strategy, email and AI workflow that ties it together.
+          </p>
+        </div>
+        <div class="caps__list" id="capsList"></div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="about" id="about">
+        <div class="section-head">
+          <span class="section-head__index">04</span>
+          <h2 class="section-head__title" data-lines>About Maddy</h2>
+        </div>
+        <div class="about__body">
+          <div class="about__portrait" data-tilt>
+            <div class="about__portrait-inner">
+              <img
+                id="portrait"
+                src="/portrait.jpg"
+                alt="Portrait of Maddy, performance marketer"
+                width="1000"
+                height="1250"
+              />
+              <canvas id="portraitFx" class="about__portrait-fx" aria-hidden="true"></canvas>
+              <span class="about__portrait-tag">Maddy — <span data-content="profile.role"></span></span>
+            </div>
+          </div>
+          <div class="about__text">
+            <p class="about__lead" data-lines data-content="about.lead"></p>
+            <div id="aboutParagraphs" class="about__paras"></div>
+            <ul class="about__facts" id="aboutFacts"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROCESS ============ -->
+      <section class="process" id="process">
+        <div class="section-head">
+          <span class="section-head__index">05</span>
+          <h2 class="section-head__title" data-lines>How the work happens</h2>
+          <p class="section-head__sub" data-reveal>
+            A simple, repeatable system for finding what works, then doing more of it — from first audit to monthly reporting.
+          </p>
+        </div>
+        <div class="process__list" id="processList"></div>
+      </section>
+
+      <!-- ============ CERTIFICATES ============ -->
+      <section class="certs" id="certificates">
+        <div class="section-head">
+          <span class="section-head__index">06</span>
+          <h2 class="section-head__title" data-lines>Certified &amp; trained</h2>
+          <p class="section-head__sub" data-reveal>
+            Formal training in digital marketing and social media, plus recognition from live projects and programmes.
+          </p>
+        </div>
+        <div class="cert-grid" id="certGrid"></div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="contact" id="contact">
+        <div class="contact__inner">
+          <p class="contact__eyebrow" data-reveal>Freelance &amp; retainer work · <span data-content="profile.availabilityWindow"></span></p>
+          <h2 class="contact__title" data-lines>
+            Let's make the<br /><span class="accent">numbers</span> undeniable.
+          </h2>
+          <a
+            href="#"
+            id="mailButton"
+            class="contact__mail"
+            data-cursor="Copy"
+            data-magnetic
+            data-content-attr="href:profile.mailto"
+          >
+            <span data-content="profile.email">hello@example.com</span>
+            <em id="mailCopied">copied ✓</em>
+          </a>
+          <div class="contact__socials" id="socials"></div>
+        </div>
+        <footer class="footer">
+          <span>© <span id="year">2026</span> Muzamil Masood — Strategies by Maddy.</span>
+          <span class="footer__meta">
+            <button id="toggleMotion" class="footer__link">reduce motion</button>
+          </span>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
