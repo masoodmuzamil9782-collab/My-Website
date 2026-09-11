@@ -67,10 +67,10 @@ export const content = {
    * ------------------------------------------------------------------------- */
   stats: [
     { prefix: '$', value: 5, suffix: 'K+', label: 'Revenue generated for clients through paid ad campaigns' },
-    { prefix: '', value: 20, suffix: '+', label: 'Social media accounts managed with consistent growth' },
+    { prefix: '', value: 70, suffix: '+', label: 'Social media accounts managed with consistent growth' },
     { prefix: '+', value: 300, suffix: '%', label: 'Bookings for a salon client from one campaign' },
     { prefix: '', value: 3, suffix: '+ yrs', label: 'Hands-on social media & performance marketing' },
-    { prefix: '', value: 4, suffix: '', label: 'Featured brand projects across food, beauty & e-commerce' },
+    { prefix: '', value: 65, suffix: '', label: 'Featured brand projects across food, beauty & e-commerce' },
     { prefix: '', value: 100, suffix: '%', label: 'Client satisfaction across projects & internships' },
   ],
 
